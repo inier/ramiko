@@ -7,6 +7,9 @@ const withAntd = require('./next-antd.config');
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
+  generateBuildId: async () => {
+    return 'my-build-id';
+  },
   assetPrefix: isProd ? 'https://blog.wipi.tech/ramiko/' : '/',
   experimental: {
     basePath: isProd ? '/ramiko' : ''
