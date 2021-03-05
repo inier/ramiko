@@ -21,6 +21,7 @@ gif 录制效果不佳，可以访问以下链接进行体验。
 - nest.js：服务端语言
 - MySQL：数据存储
 
+
 ## 整体架构
 
 ![](https://wipi.oss-cn-shanghai.aliyuncs.com/2020-06-28/ramiko-jiagou.png)
@@ -178,3 +179,5 @@ Tracking.schema = {
 Github：[传送门](https://github.com/fantasticit/ramiko)
 
 在 `client` 和 `server` 分别执行 `yarn dev` 即可。
+
+> 运行前，先安装好mysql，并启动好mysql服务，创建好指定的数据库。
