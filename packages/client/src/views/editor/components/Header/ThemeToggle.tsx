@@ -37,9 +37,10 @@ export const ThemeToggle = () => {
           height="16"
           role="presentation"
           style={{
-            pointerEvents: 'none'
+            pointerEvents: 'none',
+            verticalAlign: '-3px'
           }}
-        ></img>
+        />
       }
       unCheckedChildren={
         <img
@@ -47,8 +48,11 @@ export const ThemeToggle = () => {
           width="16"
           height="16"
           role="presentation"
-          style={{ pointerEvents: 'none' }}
-        ></img>
+          style={{
+            pointerEvents: 'none',
+            verticalAlign: '-3px'
+          }}
+        />
       }
       onChange={setDark}
     />
