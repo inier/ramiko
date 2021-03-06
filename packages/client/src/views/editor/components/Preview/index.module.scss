@@ -37,8 +37,8 @@
     width: 375px;
     min-height: 100%;
     margin: 0 auto;
-    background-color: var(--editor-pannel-bgcolor);
-    box-shadow: var(--editor-page-preview-pannel-boxshadow);
+    background-color: var(--editor-panel-bgcolor);
+    box-shadow: var(--editor-page-preview-panel-boxshadow);
     border-radius: 2px;
 
     &.isPreview {
@@ -81,7 +81,7 @@
           border-radius: 50%;
           z-index: 1000;
           cursor: pointer;
-          box-shadow: var(--editor-page-preview-pannel-boxshadow);
+          box-shadow: var(--editor-page-preview-panel-boxshadow);
           visibility: hidden;
 
           &:last-of-type {
@@ -137,7 +137,7 @@
     position: absolute;
     left: 0;
     width: 100%;
-    background-color: var(--editor-page-preview-pannel-hover-bgcolor);
+    background-color: var(--editor-page-preview-panel-hover-bgcolor);
 
     .action {
       position: absolute;
@@ -148,7 +148,7 @@
       border-radius: 50%;
       z-index: 1000;
       cursor: pointer;
-      box-shadow: var(--editor-page-preview-pannel-boxshadow);
+      box-shadow: var(--editor-page-preview-panel-boxshadow);
 
       &:last-of-type {
         top: 100%;

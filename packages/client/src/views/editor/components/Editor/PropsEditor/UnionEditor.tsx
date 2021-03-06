@@ -63,7 +63,7 @@ export const UnionEditor = ({
             return value[key] && typeof value[key] === 'object' ? (
               <Panel
                 header={
-                  <span className={style.pannellHeader}>
+                  <span className={style.panellHeader}>
                     {subSchema[key].title || '组'}
                   </span>
                 }
@@ -84,7 +84,7 @@ export const UnionEditor = ({
             ) : (
               <Panel
                 header={
-                  <span className={style.pannellHeader}>
+                  <span className={style.panellHeader}>
                     {subSchema.title || '组'}
                   </span>
                 }
@@ -118,7 +118,7 @@ export const UnionEditor = ({
           return (
             <Panel
               header={
-                <span className={style.pannellHeader}>
+                <span className={style.panellHeader}>
                   {getTitleOrNameOfObj(v)}
                 </span>
               }

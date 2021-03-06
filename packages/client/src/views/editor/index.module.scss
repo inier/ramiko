@@ -46,18 +46,18 @@
     background: var(--editor-main-bgcolor);
     overflow: hidden;
 
-    .pannelWrapper {
+    .panelWrapper {
       position: absolute;
       top: 0;
       z-index: 120;
       width: 360px;
       height: 100%;
       transition: all ease-in-out 0.3s;
-      background-color: var(--editor-pannel-bgcolor);
+      background-color: var(--editor-panel-bgcolor);
 
       &.left {
         left: 0;
-        box-shadow: var(--editor-page-component-pannel-boxshadow);
+        box-shadow: var(--editor-page-component-panel-boxshadow);
         transform: translateX(-100%);
 
         &.isVisible {
@@ -67,7 +67,7 @@
 
       &.right {
         right: 0;
-        box-shadow: var(--editor-page-component-eidtor-pannel-boxshadow);
+        box-shadow: var(--editor-page-component-eidtor-panel-boxshadow);
         transform: translateX(100%);
 
         &.isVisible {

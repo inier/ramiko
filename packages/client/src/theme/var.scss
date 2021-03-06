@@ -2,8 +2,8 @@
   body {
     --editor-primary-color: #ff0064;
     --editor-main-bgcolor: #f2f3f4; // 编辑器主题背景色
-    --editor-pannel-bgcolor: #fff; // 编辑器面板背景色
-    --editor-page-preview-pannel-width: 375px; // 编辑器页面预览编辑区域宽度
+    --editor-panel-bgcolor: #fff; // 编辑器面板背景色
+    --editor-page-preview-panel-width: 375px; // 编辑器页面预览编辑区域宽度
     --editor-border-color: #d9d9d9; // 编辑器边框颜色
     --editor-text-color-primary: rgba(0, 0, 0, 0.85); // 编辑器主要字体颜色
     --editor-text-color-second: rgba(0, 0, 0, 0.65); // 编辑器次要字体颜色
@@ -18,10 +18,10 @@
     --editor-padding-vertical-medium: 12px; // 编辑器头部水平方向内边距
     --editor-padding-vertical-small: 8px; // 编辑器头部水平方向内边距
     --editor-header-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.06); // 编辑器头部影音
-    --editor-page-component-pannel-boxshadow: 3px 0 16px rgba(0, 0, 0, 0.06); // 编辑器组件面板阴影
-    --editor-page-preview-pannel-boxshadow: 0 3px 16px 0 rgba(0, 0, 0, 0.04); // 编辑器页面预览面板阴影
-    --editor-page-preview-pannel-hover-bgcolor: #ededef; // 编辑器预览面板hover组件时背景色
-    --editor-page-component-eidtor-pannel-boxshadow: 0px 3px 16px
+    --editor-page-component-panel-boxshadow: 3px 0 16px rgba(0, 0, 0, 0.06); // 编辑器组件面板阴影
+    --editor-page-preview-panel-boxshadow: 0 3px 16px 0 rgba(0, 0, 0, 0.04); // 编辑器页面预览面板阴影
+    --editor-page-preview-panel-hover-bgcolor: #ededef; // 编辑器预览面板hover组件时背景色
+    --editor-page-component-eidtor-panel-boxshadow: 0px 3px 16px
       rgba(0, 0, 0, 0.06); // 编辑器组件属性编辑器面板阴影
 
     img {
@@ -33,8 +33,8 @@
     // 暗黑主题
     --editor-primary-color: #ff0064;
     --editor-main-bgcolor: #282c35; // 编辑器主题背景色
-    --editor-pannel-bgcolor: #363c48; // 编辑器面板背景色
-    --editor-page-preview-pannel-width: 375px; // 编辑器页面预览编辑区域宽度
+    --editor-panel-bgcolor: #363c48; // 编辑器面板背景色
+    --editor-page-preview-panel-width: 375px; // 编辑器页面预览编辑区域宽度
     // --editor-border-color: rgba(178, 186, 194, 0.15); // 编辑器边框颜色
     --editor-text-color-primary: rgba(
       255,
@@ -45,10 +45,10 @@
     --editor-text-color-second: rgba(255, 255, 255, 0.65); // 编辑器次要字体颜色
     --editor-text-color-thirty: rgba(255, 255, 255, 0.45); // 编辑器辅助字体颜色
     --editor-header-box-shadow: 0 2px 15px 0 rgba(26, 26, 27, 0.637); // 编辑器头部影音
-    --editor-page-component-pannel-boxshadow: 2px 0s 15px 0
+    --editor-page-component-panel-boxshadow: 2px 0s 15px 0
       rgba(26, 26, 27, 0.637); // 编辑器组件面板阴影
-    --editor-page-preview-pannel-boxshadow: 0 2px 15px 0 rgba(26, 26, 27, 0.637); // 编辑器页面预览面板阴影
-    --editor-page-preview-pannel-hover-bgcolor: #1b1c1f;
+    --editor-page-preview-panel-boxshadow: 0 2px 15px 0 rgba(26, 26, 27, 0.637); // 编辑器页面预览面板阴影
+    --editor-page-preview-panel-hover-bgcolor: #1b1c1f;
 
     img {
       opacity: 0.75;

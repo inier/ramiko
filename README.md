@@ -40,7 +40,7 @@ gif 录制效果不佳，可以访问以下链接进行体验。
 |____Editor.tsx            ## 编辑器
 |____type.ts               ## 类型定义
 |____components
-| |____Pannel              ## 左侧组件面板
+| |____Panel              ## 左侧组件面板
 | |____Preview             ## 中间预览面板
 | |____Editor              ## 组件编辑器实现
 | | |____index.tsx

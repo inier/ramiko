@@ -101,7 +101,7 @@ export const FunctionEditor: React.FC<IProps> = ({
           {fns.map((fn, index) => {
             return (
               <Collapse.Panel
-                header={<span className={style.pannellHeader}>{fn.group}</span>}
+                header={<span className={style.panellHeader}>{fn.group}</span>}
                 key={index}
                 extra={
                   <DeleteOutlined

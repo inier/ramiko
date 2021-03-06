@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import clone from 'lodash/clone';
-import { Modal } from 'antd';
+import { Modal, message } from 'antd';
 import cls from 'classnames';
 import { InfoCircleOutlined } from '@ant-design/icons';
 import { PageProvider } from 'api/page';
 import { Mode, IComponent, IPageSetting } from './type';
 import { Header } from './components/Header';
-import { Pannel } from './components/Pannel';
+import { Panel } from './components/Panel';
 import { Preview } from './components/Preview';
 import { Editor as PropsEditor } from './components/Editor';
 import style from './index.module.scss';
@@ -25,7 +25,7 @@ export const Editor: React.FC<IProps> = ({
   const [loading, setLoading] = useState<boolean>(false);
 
   const [mode, setMode] = useState<Mode>('edit');
-  const [componentPannelVisible, setComponentPannelVisible] = useState<boolean>(
+  const [componentPanelVisible, setComponentPanelVisible] = useState<boolean>(
     true
   );
   const [propsEditorVisible, setPropsEditorVisible] = useState<boolean>(true);
@@ -122,8 +122,7 @@ export const Editor: React.FC<IProps> = ({
     unsafeUpdate();
   };
 
-  const save = () => {
-    setLoading(true);
+  const save = () => {    
     const data = components.map((component: any) => {
       return {
         id: component.id,
@@ -137,6 +136,13 @@ export const Editor: React.FC<IProps> = ({
         }))
       };
     });
+
+    if (!data.length) {
+      message.error('至少要添加一个组件哦！');
+      return;
+    }
+
+    setLoading(true);
     PageProvider.addPage({
       setting: pageSetting,
       components: data
@@ -166,19 +172,19 @@ export const Editor: React.FC<IProps> = ({
       <main>
         <div
           className={cls(
-            style.pannelWrapper,
+            style.panelWrapper,
             style.left,
-            componentPannelVisible ? style.isVisible : false
+            componentPanelVisible ? style.isVisible : false
           )}
         >
-          <Pannel
-            visible={componentPannelVisible}
-            onOpen={() => setComponentPannelVisible(true)}
+          <Panel
+            visible={componentPanelVisible}
+            onOpen={() => setComponentPanelVisible(true)}
             onSelect={component => {
               addComponent(component);
-              setComponentPannelVisible(true);
+              setComponentPanelVisible(true);
             }}
-            onClose={() => setComponentPannelVisible(false)}
+            onClose={() => setComponentPanelVisible(false)}
           />
         </div>
         <Preview
@@ -198,7 +204,7 @@ export const Editor: React.FC<IProps> = ({
         />
         <div
           className={cls(
-            style.pannelWrapper,
+            style.panelWrapper,
             style.right,
             current && propsEditorVisible ? style.isVisible : false
           )}
