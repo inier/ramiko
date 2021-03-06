@@ -29,7 +29,7 @@ export const Editor: React.FC<IProps> = ({
   return (
     <div className={style.wrapper}>
       <h3>
-        <span>编辑器</span>
+        <span>编辑区</span>
         <CloseOutlined onClick={onClose} />
       </h3>
       <main>

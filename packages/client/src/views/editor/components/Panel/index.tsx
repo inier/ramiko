@@ -28,7 +28,7 @@ export const Panel: React.FC<IProps> = ({
   return (
     <div className={style.wrapper}>
       <h3>
-        <span>添加组件</span>
+        <span>组件区</span>
         <CloseOutlined onClick={onClose} />
       </h3>
       <main>
